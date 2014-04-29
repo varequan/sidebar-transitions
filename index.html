@@ -1,55 +1,237 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Sidebar-transitions by flysky22</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Sidebar Transitions</title>
+		<meta name="description" content="Sidebar Transitions: Transition effects for off-canvas views" />
+		<meta name="keywords" content="transition, off-canvas, navigation, effect, 3d, css3, smooth" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="css/icons.css" /> -->
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<style>
+		.top-banner {
+			z-index: 999;
+			text-align: right;
+			height: 30px !important;
+			line-height: 30px !important;
+		}
+		.top-banner a {
+			color:green !important;
+			text-shadow: none;
+		}
+		.column {
+			margin: 60px auto;
+			float: none;
+			text-align: center;
+			width: 75%;
+			min-height: 100px;
+		}
+		</style>
+		<script src="js/modernizr.custom.js"></script>
+		<link rel="stylesheet" href="http://dreamsky.github.io/main/blog/common/init.css">
+		<script src="http://dreamsky.github.io/main/blog/common/jquery.min.js"></script>
+		<script src="http://dreamsky.github.io/main/blog/common/init.js"></script>		
+	</head>
+	<body>
+		<div id="st-container" class="st-container">
+			<!-- 	
+				example menus 
+				these menus will be on top of the push wrapper
+			-->
+			<nav class="st-menu st-effect-1" id="menu-1">
+				<h2 class="icon icon-lab">Sidebar</h2>
+				<ul>
+					<li><a class="icon icon-data" href="#">Data Management</a></li>
+					<li><a class="icon icon-location" href="#">Location</a></li>
+					<li><a class="icon icon-study" href="#">Study</a></li>
+					<li><a class="icon icon-photo" href="#">Collections</a></li>
+					<li><a class="icon icon-wallet" href="#">Credits</a></li>
+				</ul>
+			</nav>
+			
+			<nav class="st-menu st-effect-2" id="menu-2">
+				<h2 class="icon icon-stack">Sidebar</h2>
+				<ul>
+					<li><a class="icon icon-data" href="#">Data Management</a></li>
+					<li><a class="icon icon-location" href="#">Location</a></li>
+					<li><a class="icon icon-study" href="#">Study</a></li>
+					<li><a class="icon icon-photo" href="#">Collections</a></li>
+					<li><a class="icon icon-wallet" href="#">Credits</a></li>
+				</ul>
+			</nav>
 
-  </head>
-  <body>
+			<nav class="st-menu st-effect-4" id="menu-4">
+				<h2 class="icon icon-lab">Sidebar</h2>
+				<ul>
+					<li><a class="icon icon-data" href="#">Data Management</a></li>
+					<li><a class="icon icon-location" href="#">Location</a></li>
+					<li><a class="icon icon-study" href="#">Study</a></li>
+					<li><a class="icon icon-photo" href="#">Collections</a></li>
+					<li><a class="icon icon-wallet" href="#">Credits</a></li>
+				</ul>
+			</nav>
 
-      <header>
-        <h1>Sidebar-transitions</h1>
-        <p>测试上传HTML实例--如何实现侧边栏的过渡动画</p>
-      </header>
+			<nav class="st-menu st-effect-5" id="menu-5">
+				<h2 class="icon icon-stack">Sidebar</h2>
+				<ul>
+					<li><a class="icon icon-data" href="#">Data Management</a></li>
+					<li><a class="icon icon-location" href="#">Location</a></li>
+					<li><a class="icon icon-study" href="#">Study</a></li>
+					<li><a class="icon icon-photo" href="#">Collections</a></li>
+					<li><a class="icon icon-wallet" href="#">Credits</a></li>
+				</ul>
+			</nav>
+			
+			<nav class="st-menu st-effect-9" id="menu-9">
+				<h2 class="icon icon-lab">Sidebar</h2>
+				<ul>
+					<li><a class="icon icon-data" href="#">Data Management</a></li>
+					<li><a class="icon icon-location" href="#">Location</a></li>
+					<li><a class="icon icon-study" href="#">Study</a></li>
+					<li><a class="icon icon-photo" href="#">Collections</a></li>
+					<li><a class="icon icon-wallet" href="#">Credits</a></li>
+				</ul>
+			</nav>
+			
+			<nav class="st-menu st-effect-10" id="menu-10">
+				<h2 class="icon icon-stack">Sidebar</h2>
+				<ul>
+					<li><a class="icon icon-data" href="#">Data Management</a></li>
+					<li><a class="icon icon-location" href="#">Location</a></li>
+					<li><a class="icon icon-study" href="#">Study</a></li>
+					<li><a class="icon icon-photo" href="#">Collections</a></li>
+					<li><a class="icon icon-wallet" href="#">Credits</a></li>
+				</ul>
+			</nav>
+			
+			<nav class="st-menu st-effect-11" id="menu-11">
+				<h2 class="icon icon-lab">Sidebar</h2>
+				<ul>
+					<li><a class="icon icon-data" href="#">Data Management</a></li>
+					<li><a class="icon icon-location" href="#">Location</a></li>
+					<li><a class="icon icon-study" href="#">Study</a></li>
+					<li><a class="icon icon-photo" href="#">Collections</a></li>
+					<li><a class="icon icon-wallet" href="#">Credits</a></li>
+				</ul>
+			</nav>
 
-      <div id="banner">
-        <span id="logo"></span>
+			<nav class="st-menu st-effect-12" id="menu-12">
+				<h2 class="icon icon-stack">Sidebar</h2>
+				<ul>
+					<li><a class="icon icon-data" href="#">Data Management</a></li>
+					<li><a class="icon icon-location" href="#">Location</a></li>
+					<li><a class="icon icon-study" href="#">Study</a></li>
+					<li><a class="icon icon-photo" href="#">Collections</a></li>
+					<li><a class="icon icon-wallet" href="#">Credits</a></li>
+				</ul>
+			</nav>
 
-        <a href="https://github.com/flysky22/sidebar-transitions" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/flysky22/sidebar-transitions/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/flysky22/sidebar-transitions/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
+			<nav class="st-menu st-effect-13" id="menu-13">
+				<h2 class="icon icon-stack">Sidebar</h2>
+				<ul>
+					<li><a class="icon icon-data" href="#">Data Management</a></li>
+					<li><a class="icon icon-location" href="#">Location</a></li>
+					<li><a class="icon icon-study" href="#">Study</a></li>
+					<li><a class="icon icon-photo" href="#">Collections</a></li>
+					<li><a class="icon icon-wallet" href="#">Credits</a></li>
+				</ul>
+			</nav>
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h3>
-<a name="%E6%B5%8B%E8%AF%95%E4%B8%8A%E4%BC%A0html%E5%AE%9E%E4%BE%8B" class="anchor" href="#%E6%B5%8B%E8%AF%95%E4%B8%8A%E4%BC%A0html%E5%AE%9E%E4%BE%8B"><span class="octicon octicon-link"></span></a>测试上传HTML实例.</h3>
+			<!-- content push wrapper -->
+			<div class="st-pusher">
+				<!-- 	
+					example menus 
+					these menus will be under the push wrapper
+				-->
+				<nav class="st-menu st-effect-3" id="menu-3">
+					<h2 class="icon icon-lab">Sidebar</h2>
+					<ul>
+						<li><a class="icon icon-data" href="#">Data Management</a></li>
+						<li><a class="icon icon-location" href="#">Location</a></li>
+						<li><a class="icon icon-study" href="#">Study</a></li>
+						<li><a class="icon icon-photo" href="#">Collections</a></li>
+						<li><a class="icon icon-wallet" href="#">Credits</a></li>
+					</ul>
+				</nav>
 
-<p>探讨如何实现侧边栏的过渡动画，就像我们已经在多级推出菜单中使用的。我们的想法是，以细微的过渡动画显示一些隐藏的侧边栏，其余的内容也是。通常侧边栏滑入，把其他内容推到一边。</p>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/flysky22">flysky22</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+				<nav class="st-menu st-effect-6" id="menu-6">
+					<h2 class="icon icon-stack">Sidebar</h2>
+					<ul>
+						<li><a class="icon icon-data" href="#">Data Management</a></li>
+						<li><a class="icon icon-location" href="#">Location</a></li>
+						<li><a class="icon icon-study" href="#">Study</a></li>
+						<li><a class="icon icon-photo" href="#">Collections</a></li>
+						<li><a class="icon icon-wallet" href="#">Credits</a></li>
+					</ul>
+				</nav>
+
+				<nav class="st-menu st-effect-7" id="menu-7">
+					<h2 class="icon icon-lab">Sidebar</h2>
+					<ul>
+						<li><a class="icon icon-data" href="#">Data Management</a></li>
+						<li><a class="icon icon-location" href="#">Location</a></li>
+						<li><a class="icon icon-study" href="#">Study</a></li>
+						<li><a class="icon icon-photo" href="#">Collections</a></li>
+						<li><a class="icon icon-wallet" href="#">Credits</a></li>
+					</ul>
+				</nav>
+
+				<nav class="st-menu st-effect-8" id="menu-8">
+					<h2 class="icon icon-stack">Sidebar</h2>
+					<ul>
+						<li><a class="icon icon-data" href="#">Data Management</a></li>
+						<li><a class="icon icon-location" href="#">Location</a></li>
+						<li><a class="icon icon-study" href="#">Study</a></li>
+						<li><a class="icon icon-photo" href="#">Collections</a></li>
+						<li><a class="icon icon-wallet" href="#">Credits</a></li>
+					</ul>
+				</nav>
+
+				<nav class="st-menu st-effect-14" id="menu-14">
+					<h2 class="icon icon-stack">Sidebar</h2>
+					<ul>
+						<li><a class="icon icon-data" href="#">Data Management</a></li>
+						<li><a class="icon icon-location" href="#">Location</a></li>
+						<li><a class="icon icon-study" href="#">Study</a></li>
+						<li><a class="icon icon-photo" href="#">Collections</a></li>
+						<li><a class="icon icon-wallet" href="#">Credits</a></li>
+					</ul>
+				</nav>
+
+				<div class="st-content"><!-- this is the wrapper for the content -->
+					<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+						<header class="codrops-header">
+							<h1>边栏过渡效果（Sidebar Transitions）</h1>
+						</header>
+						<div class="main clearfix">
+							<div id="st-trigger-effects" class="column">
+								<button data-effect="st-effect-1">效果一</button>
+								<button data-effect="st-effect-2">效果二</button>
+								<button data-effect="st-effect-3">效果三</button>
+								<button data-effect="st-effect-4">效果四</button>
+								<button data-effect="st-effect-5">效果五</button>
+								<button data-effect="st-effect-6">效果六</button>
+								<button data-effect="st-effect-7">效果七</button>
+								<button data-effect="st-effect-8">效果八</button>
+								<button data-effect="st-effect-9">效果九</button>
+								<button data-effect="st-effect-10">效果十</button>
+								<button data-effect="st-effect-11">效果十一</button>
+								<button data-effect="st-effect-12">效果十二</button>
+								<button data-effect="st-effect-13">效果十三</button>
+								<button data-effect="st-effect-14">效果十四</button>
+							</div>
+						</div><!-- /main -->
+						<div class="footer-banner" style="width:728px; margin:30px auto"></div>
+					</div><!-- /st-content-inner -->
+				</div><!-- /st-content -->
+			</div><!-- /st-pusher -->
+		</div><!-- /st-container -->
+		<script src="js/classie.js"></script>
+		<script src="js/sidebarEffects.js"></script>
+	</body>
 </html>
